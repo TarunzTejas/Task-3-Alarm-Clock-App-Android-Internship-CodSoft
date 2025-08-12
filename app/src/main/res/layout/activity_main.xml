@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"/><!-- Optional: spinner or clock -->
+
+    <TextView
+        android:id="@+id/currentTime"
+        android:text="12:00:00 PM"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/currentDate"
+        android:text="Mon, Jan 01 2025"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/set_alarm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Alarm" />
+
+
+    <Button
+        android:id="@+id/setAlarmButton"
+        android:text="Set New Alarm"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/alarmRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+
+</LinearLayout>
+
+
+
